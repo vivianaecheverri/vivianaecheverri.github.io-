@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos web</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+
+<!--navegador-->
+<header class="cd-auto-hide-header">
+	<div class="logo"><a href="#0"><img src="imgs/Logo.png"></a></div>
+
+	<nav class="cd-primary-nav">
+		<a href="#cd-navigation" class="nav-trigger">
+			<span>
+				<em aria-hidden="true"></em>
+				Menu
+			</span>
+		</a> <!-- .nav-trigger -->
+
+		<ul id="cd-navigation">
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="videos.html">Videos</a></li>
+			<li><a href="#0">Servicios</a></li>
+			<li><a href="#0">Contacto</a></li>
+			
+		</ul>
+	</nav> <!-- .cd-primary-nav -->
+</header> <!-- .cd-auto-hide-header -->
+
+<!-- Swiper -->
+    <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+    <div class="swiper-slide"> <img src="imgs/1jpg.jpg"> </div>
+    <div class="swiper-slide"> <img src="imgs/2 jpg.jpg"> </div>
+    <div class="swiper-slide"> <img src="imgs/3 jpg.jpg"> </div>
+    <div class="swiper-slide"> <img src="imgs/4 jpg.jpg"> </div>
+    <div class="swiper-slide"> <img src="imgs/5 jpg.jpg"> </div>
+    <div class="swiper-slide"> <img src="imgs/6 jpg.jpg"> </div>
+    <div class="swiper-slide"> <img src="imgs/7 jpg.jpg"> </div>
+    <div class="swiper-slide"> <img src="imgs/8 jpg.jpg"> </div>
+    <div class="swiper-slide"> <img src="imgs/9 jpg.jpg"> </div>
+    <!-- Swiper JS -->
+
+    <!--slider-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js">
+    </script>
+    
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+  <!--Fin slider-->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
